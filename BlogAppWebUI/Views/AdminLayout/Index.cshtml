@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html lang="en">
+<!--begin::Head-->
+<head>
+	@await Component.InvokeAsync("_LayoutHeader2PartialComponent")
+</head>
+<body id="kt_body" class="header-fixed header-mobile-fixed page-loading">
+	<div class="d-flex flex-column flex-root">
+		<div class="d-flex flex-row flex-column-fluid page">
+			<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+				<div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
+					<a href="index.html">
+						<img alt="Logo" src="~/demo11/dist/assets/media/logos/logo-letter-12.png" class="max-h-30px" />
+					</a>
+				</div>
+				<div id="kt_header" class="header flex-column header-fixed">
+					<div class="header-top">
+						<div class="container">
+							<div class="d-none d-lg-flex align-items-center mr-3">
+								<a href="index.html" class="mr-20">
+									<img alt="Logo" src="~/demo11/dist/assets/media/logos/logo-letter-12.png" class="max-h-40px" />
+								</a>
+							</div>
+						</div>
+					</div>
+					@await Component.InvokeAsync("_LayoutHeaderPartialComponent")
+					
+				</div>
+
+				<div class="d-flex flex-row flex-column-fluid container">
+					<div class=" card card-custom card-border gutter-b card-stretch main d-flex flex-column flex-row-fluid">
+						@RenderBody()
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</body>
+@await Component.InvokeAsync("_LayoutScriptPartialComponent")
+</html>

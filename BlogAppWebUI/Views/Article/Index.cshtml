@@ -1,0 +1,33 @@
+﻿@model List<BlogAppWebUI.Dtos.ArticleDtos.ResultArticleDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+@* Article *@
+
+<div class="row">
+    <div class="col-lg-12">
+        <!--begin::Card-->
+        @foreach (var item in Model)
+        {
+            <div class="card card-custom  card-stretch-half gutter-b ">
+                <div class="card-header" style="background:#d3c7f0">
+                    <div class="card-title d-flex">
+                        <h3 class="card-label">@item.ArticleTitle </h3>
+                        <div class="ml-auto">
+                            <a href="/Article/Details/@item.ArticleID" class="btn btn-outline-primary align-items-md-end">Detay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body text-color-danger">
+                    @Html.Raw(Html.Encode(item.ArticleContent.Length > 250 ? item.ArticleContent.Substring(0, 250) + "..." : item.ArticleContent))
+                </div>
+
+            </div>
+        }
+    </div>
+</div>
+
+
+

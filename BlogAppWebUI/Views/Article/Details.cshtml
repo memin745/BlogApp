@@ -1,0 +1,94 @@
+﻿@model BlogAppWebUI.Dtos.ArticleDtos.ResultArticleDto
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <!-- Blog Detayları Başlangıç -->
+            <div class="card">
+                @*  @foreach (var item in Model) *@
+                <img src="~/demo11/dist/assets/media/books/a.jpg" />
+                <div class="card-body">
+                    <h2 class="card-title">@Model.ActicleName</h2>
+                    <p class="card-text">@Model.ArticleContent</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Blog Sahibi:@Model.User</li>
+                    <li class="list-group-item">Yüklenme Tarihi: @Model.ActicleTime.ToString("dd.MM.yyyy")</li>
+                </ul>
+                <!-- Yorumlar Başlangıç -->
+                <div class="card-body mt-3">
+                    <h3>Yorumlar</h3>
+                    <div class="media">
+                        <img src="~/demo11/src/media/users/100_1.jpg" class="mr-3 rounded-circle" alt="User Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Muhammet Emin Yağmur</h5>
+                            Bu Yazınız Çok Başarılı Olmuş.
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <img src="~/demo11/src/media/users/100_10.jpg" class="mr-3 rounded-circle" alt="User Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Betül Yıldız</h5>
+                            Başarılar Dilerim.
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <img src="~/demo11/src/media/users/100_11.jpg" class="mr-3 rounded-circle" alt="User Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Amine Kar</h5>
+                            Daha Farklı Alanlarda Yazınız Gelecek mi?
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <img src="~/demo11/src/media/users/100_12.jpg" class="mr-3 rounded-circle" alt="User Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Mustafa Emin Yağmur</h5>
+                            Bilgisayar Öneriniz Var mı?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Yorum Yap</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="userName">Adınız:</label>
+                                <input type="text" class="form-control" id="userName" placeholder="Adınızı girin">
+                            </div>
+                            <div class="form-group">
+                                <label for="userComment">Yorumunuz:</label>
+                                <textarea class="form-control" id="userComment" rows="4" placeholder="Yorumunuzu buraya yazın"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Yorum Yap</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- Yorumlar Bitiş -->
+        </div>
+        <!-- Blog Detayları Bitiş -->
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+

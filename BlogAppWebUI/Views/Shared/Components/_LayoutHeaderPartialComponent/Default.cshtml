@@ -1,0 +1,223 @@
+﻿
+    <style>
+        .active {
+            background-color: #ddd; /* veya istediğiniz başka bir stil */
+        }
+    </style>
+
+
+    <div class="header-bottom" id="kt_header_bottom">
+        <div class="container d-flex flex-column">
+            <ul class="header-tabs nav flex-column-auto" role="tablist">
+                <li class="nav-item">
+                    <a href="/Article/Index/" class="nav-link">
+                        <span class="nav-title text-uppercase">Anasayfa</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Category/Index/" class="nav-link">
+                        <span class="nav-title text-uppercase">Kategoriler</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Article/CreateArticle/" class="nav-link">
+                        <span class="nav-title text-uppercase">Bloglar</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-title text-uppercase">Yorumlar</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-title text-uppercase">Çıkış</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Tüm nav-link öğelerini seç
+            $(".nav-link").click(function () {
+                // Tüm nav-link öğelerinden active class'ını kaldır
+                $(".nav-link").removeClass("active");
+
+                // Tıklanan öğeye active class'ını ekle
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="container">
+    <nav>
+        <ul>
+            <li> <a style="background-color:#04a4aa;" href="#"><i class="fa fa-fw fa-home"></i></a></li>
+            <li><a href="/Article/Index/">Bloglar</a></li>
+            <li><a href="/Category/Index/">Kategoriler</a></li>
+            <li><a href="/Article/CreateArticle/">Blog Girişi</a></li>
+
+        </ul>
+      
+    </nav>
+</div>
+    <style>
+        /* CSS Document */
+
+        @@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+        @@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .active {
+            background-color: #04a4aa;
+        }
+
+        @@media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+
+        body {
+            font-size: 22px;
+            line-height: 32px;
+            color: red;
+            word-wrap: break-word !important;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: #000;
+        }
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+            color: #000;
+        }
+
+            h3 a {
+                color: #000;
+            }
+
+        a {
+            color: #000;
+        }
+
+        h1 {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 60px;
+            font-family: "Bree Serif", "serif";
+        }
+
+        #container {
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        nav {
+            margin: 30px 0;
+            background-color: #242526;
+        }
+
+            nav ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                position: relative;
+            }
+
+                nav ul li {
+                    display: inline-block;
+                    background-color: #242526;
+                }
+
+            nav a {
+                display: block;
+                padding: 0 10px;
+                color: #fff;
+                font-size: 20px;
+                line-height: 60px;
+                text-decoration: none;
+            }
+
+                nav a:hover {
+                    background-color: #fc8e98;
+                }
+
+            /* Hide Dropdowns by Default */
+            nav ul ul {
+                display: none;
+                position: absolute;
+                top: 60px; /* the height of the main nav */
+            }
+
+            /* Display Dropdowns on Hover */
+            nav ul li:hover > ul {
+                display: inherit;
+            }
+
+            /* First Tier Dropdown */
+            nav ul ul li {
+                width: 250px;
+                float: none;
+                display: list-item;
+                position: relative;
+                z-index: 999;
+            }
+
+            /* Second, Third and more Tiers	*/
+            nav ul ul ul li {
+                position: relative;
+                top: -60px;
+                left: 250px;
+                z-index: 999;
+            }
+
+        /* Change this in order to change the Dropdown symbol */
+        li > a:after {
+            content: " +";
+        }
+
+        li > a:only-child:after {
+            content: "";
+        }
+    </style>
+ *@

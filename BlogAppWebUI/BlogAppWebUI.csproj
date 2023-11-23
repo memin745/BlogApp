@@ -1,0 +1,181 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogApp.BusinnesLayer\BlogApp.BusinessLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\demo11\dist\assets\css\pages\login\classic\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\datatables\advanced\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\datatables\basic\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\datatables\data-sources\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\datatables\extensions\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\datatables\search-options\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\file-upload\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\forms\editors\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\forms\validation\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\forms\widgets\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\ktdatatable\advanced\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\ktdatatable\api\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\ktdatatable\base\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\crud\ktdatatable\child\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\chat\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\contacts\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\ecommerce\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\education\school\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\education\student\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\inbox\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\login\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\profile\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\projects\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\todo\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\user\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\custom\wizard\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\features\base\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\features\calendar\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\features\cards\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\features\charts\amcharts\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\features\custom\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\features\maps\" />
+    <Folder Include="wwwroot\demo11\dist\assets\js\pages\features\miscellaneous\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Clothes\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Code\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Communication\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Cooking\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Design\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Devices\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Electric\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Files\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Food\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\General\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Home\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Layout\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Map\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Media\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Navigation\Stockholm-icons\Navigation\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Shopping\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Text\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Tools\" />
+    <Folder Include="wwwroot\demo11\dist\assets\media\svg\icons\Weather\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\icons\default\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\advlist\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\anchor\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\autolink\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\autoresize\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\autosave\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\bbcode\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\charmap\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\codesample\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\code\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\colorpicker\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\contextmenu\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\directionality\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\emoticons\js\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\fullpage\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\fullscreen\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\help\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\hr\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\imagetools\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\image\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\importcss\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\insertdatetime\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\legacyoutput\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\link\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\lists\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\media\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\nonbreaking\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\noneditable\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\pagebreak\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\paste\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\preview\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\print\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\quickbars\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\save\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\searchreplace\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\spellchecker\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\tabfocus\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\table\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\template\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\textcolor\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\textpattern\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\toc\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\visualblocks\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\visualchars\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\plugins\wordcount\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\skins\content\dark\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\skins\content\default\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\skins\content\document\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\skins\content\writer\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\skins\ui\oxide-dark\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\custom\tinymce\skins\ui\oxide\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\global\fonts\%40fortawesome\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\global\fonts\flaticon2\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\global\fonts\flaticon\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\global\fonts\keenthemes-icons\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\global\fonts\line-awesome\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\global\fonts\socicon\" />
+    <Folder Include="wwwroot\demo11\dist\assets\plugins\global\fonts\summernote\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\datatables\advanced\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\datatables\basic\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\datatables\data-sources\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\datatables\extensions\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\datatables\search-options\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\forms\editors\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\forms\validation\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\forms\widgets\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\ktdatatable\advanced\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\ktdatatable\api\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\ktdatatable\base\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\crud\ktdatatable\child\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\custom\education\school\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\custom\education\student\" />
+    <Folder Include="wwwroot\demo11\src\js\pages\features\charts\amcharts\" />
+    <Folder Include="wwwroot\demo11\src\media\svg\icons\Navigation\Stockholm-icons\Navigation\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\amd\algorithms\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\amd\core\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\amd\filters\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\amd\locales\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\amd\plugins\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\amd\utils\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\amd\validators\id\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\amd\validators\vat\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\es6\algorithms\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\es6\core\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\es6\filters\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\es6\locales\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\es6\plugins\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\es6\utils\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\es6\validators\id\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\es6\validators\vat\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\js\locales\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\dist\js\plugins\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\src\css\plugins\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\src\js\algorithms\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\src\js\core\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\src\js\filters\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\src\js\locales\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\src\js\plugins\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\src\js\utils\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\src\js\validators\id\" />
+    <Folder Include="wwwroot\demo11\src\plugins\formvalidation\src\js\validators\vat\" />
+  </ItemGroup>
+
+</Project>
